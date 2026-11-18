@@ -20,9 +20,10 @@ def jogar():
         tentativas = 15
     elif(nivel == 3):
         tentativas = 10
-    if(nivel == 4):
+    elif(nivel == 4):
         tentativas = 5
-
+    else:
+        jogar()
     for rodada in range(1,tentativas + 1):
         print("tentativa {} de {}".format(rodada,tentativas))
         chute = input("Digite um número entre 1 e 100:")
@@ -55,5 +56,5 @@ def jogar():
 
     print("fim de jogo")
 
-if(__name__ =="__main__ "):
+if(__name__ =="__main__"):
     jogar()
